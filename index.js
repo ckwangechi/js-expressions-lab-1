@@ -13,9 +13,9 @@ const fahrenheitToCelsius = temperature_in_fahrenheit.map(temp => (temp - 32) * 
 //* Then apply the conversion to calculate the total in the other unit of measurement
 
 //* Call the variables: tot_temperature_in_fahrenheit and tot_temperature_in_celsius
-const tot_temperature_in_fahrenheit = temperature_in_celsius.concat(celsiusToFahrenheit).reduce((sum, temp) => sum + temp, 0);
+const tot_temperature_in_fahrenheit = temperature_in_fahrenheit.concat(celsiusToFahrenheit).reduce((sum, temp) => sum + temp, 0);
 
-const tot_temperature_in_celsius = temperature_in_fahrenheit.concat(fahrenheitToCelsius).reduce((sum, temp) => sum + temp, 0);
+const tot_temperature_in_celsius = temperature_in_celsius.concat(fahrenheitToCelsius).reduce((sum, temp) => sum + temp, 0);
 
 //! Start the calculation of the average temperatures
 
